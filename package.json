@@ -1,0 +1,22 @@
+{
+  "name": "functions",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "clean": "rm -rf whatsapp_function/lib",
+    "prebuild": "npm run clean",
+    "build": "cd whatsapp_function && npm install && npx tsc",
+    "deploy": "firebase deploy --only functions",
+    "emulator": "firebase emulators:start --only functions,firestore"
+  },
+  "dependencies": {
+    "firebase-functions": "^6.0.0",
+    "firebase-admin": "^11.11.0",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.0"
+  },
+  "private": true
+} 

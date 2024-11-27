@@ -1,0 +1,16 @@
+{
+  "stripe": {
+    "secret": "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",
+    "test_secret": "sk_test_51PoCrn05ZmOEFOYphPppPJPzACxD41ybw7FHZed7OVoExfR9qGA6tlzMMXmbS9eGpt1LhjAW8kfDEYrRqykfI8v6008ARm5nn1",
+    "test_webhook_secret": "whsec_IwyPtdibQ1S5rOGRPWyLm2B5vj1LYLfm",
+    "webhook_secret": "whsec_LiwNauTWOnw6xuxUnUJwFYq0jVnvAeJl"
+  },
+  "twilio": {
+    "auth_token": "cfb73c78ab2827ac99334ab65e997d69",
+    "from_number": "+14155238886",
+    "account_sid": "AC71ab3003f51ab535cb6448911930a56"
+  },
+  "admin": {
+    "phone_numbers": "+50246260272"
+  }
+}
