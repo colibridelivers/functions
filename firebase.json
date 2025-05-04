@@ -1,8 +1,18 @@
 {
   "functions": [
     {
+      "source": ".",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    },
+    {
       "source": "whatsapp_function",
-      "codebase": "whatsapp_function",
+      "codebase": "whatsapp",
       "ignore": [
         "node_modules",
         ".git",
@@ -11,6 +21,29 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    },
+    {
+      "source": "DriverAccountMigration",
+      "codebase": "driver",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    },
+    {
+      "source": "AndroidStripe",
+      "codebase": "androidstripe",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
       ]
     }
   ]
