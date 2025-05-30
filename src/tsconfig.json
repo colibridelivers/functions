@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../lib/src",
+    "rootDir": ".",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": [
+    "index.ts",
+    "stripeCheckoutSession.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "../lib",
+    "affiliatePointsFunction.ts",
+    "androidStripeFunction.ts",
+    "retrievePaymentMethods.ts"
+  ]
+} 

@@ -7,12 +7,14 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2017",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "esModuleInterop": true
   },
-  "references": [
-    { "path": "./src" },
-    { "path": "./stripepaymentsession" }
-    // { "path": "./whatsapp_function" } // Commented out
+  "include": [
+    "index.ts"
   ],
-  "files": []
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
 } 

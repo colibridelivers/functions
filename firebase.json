@@ -11,6 +11,20 @@
       ]
     },
     {
+      "source": "stripepaymentsession",
+      "codebase": "stripecheckout",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" install",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    },
+    {
       "source": "whatsapp_function",
       "codebase": "whatsapp",
       "ignore": [
@@ -39,6 +53,16 @@
     {
       "source": "AndroidStripe",
       "codebase": "androidstripe",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    },
+    {
+      "source": "PaymentMethods",
+      "codebase": "paymentmethods",
       "ignore": [
         "node_modules",
         ".git",

@@ -120,7 +120,7 @@ export const testWhatsApp = functions.https.onRequest(async (req, res) => {
                           'If you receive this, WhatsApp notifications are working!';
         
         const results = await Promise.all(
-            ADMIN_PHONE_NUMBERS.map(number => 
+            ADMIN_PHONE_NUMBERS.map((number: string) => 
                 retryOperation(() => sendWhatsAppMessage(number, testMessage))
             )
         );
